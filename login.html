@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>NICE COMPUTERS</title>
+  <link rel="icon" type="image/x-icon" href="nicelogo.jpg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript">
+
+	function check()
+	{
+		var uname=document.getElementById("uname").value;
+		var pwd=document.getElementById("pwd").value;
+
+		if(uname=="nicecomputers" && pwd=="nice123")
+		{
+			document.getElementById("form1").action="home.html";
+		}
+	    else
+		{
+			document.getElementById("err").innerHTML="USERNAME  & PASSWORD ARE INCORRECT";
+			return false;
+		}
+	}
+  </script>
+
+
+
+ </head>
+ <body>
+  <div class="topheader">
+    <div style="float:left;">nicecomputers2004@gmail.com</div>
+    <div style="float:right;"><img id="logo" src="instalogo.jpg">NiceComputers</div>
+  </div>
+
+  <div class="header">
+
+	<div class="row">
+   		<div class="hpart1"> <img src="nicelogo.jpg" /> </div>
+		<div class="hpart2">Nice Computers</div>
+		<div class="hpart3">  <a href="login.html" class="login">Login</a> </div>
+   </div>
+
+  </div>
+
+
+  <div class="menubar">
+    <ul>
+		<li> <a href="#">Home</a> </li>
+		<li> <a href="#aboutus">About</a></li>
+		<li> <a href="#courses">Courses</a></li>
+		<li> <a href="#success">Success Milestones</a></li>
+	</ul>
+  </div>
+
+
+
+
+ <div class="bodypart">
+	<br/><br/>
+		<h1 class="sectitle" >Login Form</h1><br/><br/>
+
+		<form id="form1" name="form1" class="loginform" onsubmit="return check()"><br/>
+			User Name: <input type="text" name="uname" id="uname" value="" /><br/><br/>
+			Pass Word:  <input type="password" name="pwd" id="pwd" value="" /><br/><br/>
+			<input type="submit" value="Login" /><br/><br/>
+		</form>
+			
+
+      <br/><br/>
+
+		<div id="err" style="color:red;text-align:center;margin-top:20px;font-weight:bolder;font-family:IMPACT;">
+		
+	    </div>
+   </div>  
+
+
+
+
+
+  <div class="footer">
+  <br/>
+		<div class="part20">
+			<h1>Youtube Channel Links</h1><br/>
+			<a href="#">Programing Basics </a> <br/>
+			<a href="#">C-Language </a> <br/>
+			<a href="#">C++ </a> <br/>
+			<a href="#">Java </a> <br/>
+			<a href="#">Python </a> <br/>
+			<a href="#">Python-Django </a> <br/>
+			<a href="#">HTML </a> <br/>
+		</div>
+
+		<div class="part20">
+			<h1>Social Media Links</h1><br/>
+			<a href="#">Facebook </a><br/>
+			<a href="#">Twitter </a><br/>
+			<a href="#">LinkedIn</a><br/>
+			<a href="#">Telegram</a><br/>
+			<a href="#">Instagram</a><br/>
+		
+		</div>
+
+		<div class="part40">
+			<h1>Submit Your Requests Here</h1><br/>
+
+			<form>
+				email:<br/>
+				<input type="email" class="footerform"> <br/>
+				Request:<br/>
+				<textarea rows="10" cols="50"> </textarea><br/><br/>
+				<input type="submit" value="Submit" class="footerform btn"><br/>
+			</form>
+		</div>
+  </div>
+
+ </body>
+</html>

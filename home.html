@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>NICE COMPUTERS</title>
+  <link rel="icon" type="image/x-icon" href="nicelogo.jpg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+<script type="text/javascript">
+    var courses = [];  // Array to store registered courses
+
+    function enrollme(course) {
+        // Confirm with the user before proceeding
+        if (window.confirm('Are you sure you want to enroll in this course?')) {
+            // Check if the course is already in the list
+            if (courses.includes(course)) {
+                alert("You are already registered for this course.");
+            } else {
+                // Add the course to the list
+                courses.push(course);
+                
+                // Build the list of courses for the alert
+                var clist = "";
+                for (var i = 0; i < courses.length; i++) {
+                    clist += (i + 1) + ". " + courses[i] + "\n";
+                }
+
+                // Show the user their enrolled courses
+                alert("Congratulations!\nYou are successfully enrolled in the following courses:\n\n" + clist);
+            }
+        }
+    }
+
+    function check() {
+        alert("Dear Member, Welcome to the Course Enrollment Page");
+    }
+</script>
+
+
+ </head>
+ <body onload="check()">
+  <div class="topheader">
+    <div style="float:left;">nicecomputers2004@gmail.com</div>
+    <div style="float:right;"><img id="logo" src="instalogo.jpg">NiceComputers</div>
+  </div>
+
+  <div class="header">
+
+	<div class="row">
+   		<div class="hpart1"> <img src="nicelogo.jpg" /> </div>
+		<div class="hpart2">Nice Computers</div>
+		<div class="hpart3">  <a href="index.html" class="login">LOGOUT</a> </div>
+   </div>
+
+  </div>
+
+
+  <div class="menubar">
+    <ul>
+		<li> <a href="#">Home</a> </li>
+		<li> <a href="#aboutus">About</a></li>
+		<li> <a href="#courses">Courses</a></li>
+		<li> <a href="#success">Success Milestones</a></li>
+	</ul>
+  </div>
+
+  <div class="bodypart">
+	<br/>
+    <h1 class="sectitle" id="courses">Courses Available</h1>
+	<br/>
+
+	<div class="courses">
+
+		<div class="coursediv">
+		  <img src="c.jpg" />
+		  <br/>
+			<a href="#">C LANGUAGE</a>
+      <br>
+			<button class="enroll" onclick="enrollme('C Language')">Enroll</button>
+		</div>
+
+		<div class="coursediv">
+		  <img src="c++.jpg" />
+		  <br/>
+			<a href="#">C++ LANGUAGE</a>
+      <br>
+			<button class="enroll" onclick="enrollme('C++ language')">Enroll</button>
+		</div>
+
+		<div class="coursediv">
+		  <img src="python.jpeg" />
+		  <br/>
+			<a href="#">PYTHON</a>
+      <br>
+			<button class="enroll" onclick="enrollme('PYTHON')">Enroll</button>
+		</div>
+
+		<div class="coursediv">
+		  <img src="java.jpeg" />
+		  <br/>
+			<a href="#">JAVA</a>
+      <br>
+			<button class="enroll" onclick="enrollme('JAVA')">Enroll</button>
+		</div>
+
+		<div class="coursediv">
+		  <img src="htmlt.avif" />
+		  <br/>
+			<a href="#">HTML</a>
+      <br>
+			<button class="enroll" onclick="enrollme('HTML')">Enroll</button>
+		</div>
+
+		<div class="coursediv">
+		  <img src="javascript.jpeg" />
+		  <br/>
+			<a href="#">JAVASCRIPT</a>
+      <br>
+			<button class="enroll" onclick="enrollme('JAVA SCRIPT')">Enroll</button>
+		</div>
+
+		<div class="coursediv">
+		  <img src="MySQL.jpg" />
+		  <br/>
+			<a href="#">MYSQL</a>
+      <br>
+			<button class="enroll" onclick="enrollme('MYSQL')">Enroll</button>
+		</div>
+
+		<div class="coursediv">
+		  <img src="oracle.jpg" />
+		  <br/>
+			<a href="#">ORACLE</a>
+      <br>
+			<button class="enroll" onclick="enrollme('ORACLE')">Enroll</button>
+		</div>   
+	</div>
+  </div>
+
+	<br/>
+	<hr/>
+	<br/>
+    <h1 class="sectitle"  id="success">Success Milestones</h1>
+	<br/>
+	<div class="success">
+      <marquee>
+	     <img src="success.jpeg.jpg" />
+		 <img src="success.jpeg.jpg" />
+		 <img src="success.jpeg.jpg" />
+		 <img src="success.jpeg.jpg" />
+		 <img src="success.jpeg.jpg" />
+		 <img src="success.jpeg.jpg" />
+		 <img src="success.jpeg.jpg" />
+		 <img src="success.jpeg.jpg" />
+	  </marquee>
+	</div>
+
+	<br/><br/>
+	<hr/>
+	<br/>
+    <h1 class="sectitle" id="aboutus">About Us</h1>
+	<br/>
+
+	<div class="about">
+			NICE COMPUTERS is an institute was established on 23rd March 2010<br/>
+            Which is directed by: Thopula Naga Naresh<br/>
+            It is an ISO-Certified institute.<br/><br/>
+            <h3 class="h">Courses offered are:</h3>
+            Pacakges: MS-Office,DTP,Accounts, Photoshop<br/>
+            Languages: C, C+, C++,java, python, .net<br/>
+            Databases: Oracle, mysql, Ms-sql,sql server, dbase, sybase, dbl<br/>
+            Web designing Courses:html, css, java script, bootstrap, dom, jquery<br/>
+            Frame works:spring and hybernet, django<br/>
+            Civil courses: AUTOCAD, STADPRO, PROVIEW<br/>
+            email:naganareshthopula@gmail.com<br/>Phone:9705945020
+    </div>
+    <br/>
+	<br/>
+
+  <div class="footer">
+  <br/>
+		<div class="part20">
+			<h1>Youtube Channel Links</h1><br/>
+			<a href="#">Programing Basics </a> <br/>
+			<a href="#">C-Language </a> <br/>
+			<a href="#">C++ </a> <br/>
+			<a href="#">Java </a> <br/>
+			<a href="#">Python </a> <br/>
+			<a href="#">Python-Django </a> <br/>
+			<a href="#">HTML </a> <br/>
+		</div>
+
+		<div class="part20">
+			<h1>Social Media Links</h1><br/>
+			<a href="#">Facebook </a><br/>
+			<a href="#">Twitter </a><br/>
+			<a href="#">LinkedIn</a><br/>
+			<a href="#">Telegram</a><br/>
+			<a href="#">Instagram</a><br/>
+		
+		</div>
+
+		<div class="part40">
+			<h1>Submit Your Requests Here</h1><br/>
+
+			<form>
+				email:<br/>
+				<input type="email" class="footerform"> <br/>
+				Request:<br/>
+				<textarea rows="10" cols="50"> </textarea><br/><br/>
+				<input type="submit" value="Submit" class="footerform btn"><br/>
+			</form>
+		</div>
+  </div>
+
+ </body>
+</html>
